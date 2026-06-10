@@ -1,39 +1,58 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Flower Power</title>
-		<link rel="stylesheet" href="/style.css" />
-	</head>
-	<body>
-		<header>
-			<div class="logo">
-				<svg
-					width="60"
-					height="48"
-					viewBox="0 0 60 48"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						d="M36 0L56.7846 12V36L36 48L15.2154 36V12L36 0Z"
-						fill="#38B131"
-					/>
-					<path
-						d="M24 3.8147e-06L44.7846 12V36L24 48L3.21539 36V12L24 3.8147e-06Z"
-						fill="#E4B279"
-					/>
-				</svg>
-				<h4>FlowerPower</h4>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<div class="divLogo">
+			<img src="assets/logo.svg" alt="logo" />
+			<h1>FlowerPower</h1>
+		</div>
+
+		<nav class="nav">
+			<ul>
+				<li><a href="" class="active">Calendar</a></li>
+				<li><a href="">Flowers</a></li>
+				<li><a href="">Resource</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<hgroup class="hgroupH2">
+			<h2>Flower Power</h2>
+			<p class="hgroupFirstP">Which flower is blooming for your bees ?</p>
+			<p class="hgroupSndP">
+				Find the best blooming mellifluous flowers and get all relative information important to
+				the bee like nectar, pollen or propolis.
+			</p>
+		</hgroup>
+
+		<form class="sectionDate">
+			<div class="divInputDate">
+				<label>
+					Start date
+					<input type="date" required id="startDate" />
+				</label>
+				<label>
+					End date
+					<input type="date" id="endDate" />
+				</label>
 			</div>
-			<section class="desktop header-a">
-				<a class="text-underline" href="">Calendar</a>
-				<a href="">Flowers</a>
-				<a href="">Resource</a>
-				<a href="">Contact</a>
-			</section>
-		</header>
-		<script src="/app.js"></script>
-	</body>
+			<button class="search" id="btnSearch">Search</button>
+		</form>
+
+		<div id="mon-conteneur"></div>
+	</main>
+
+	<script src="app.js"></script>
+</body>
+
 </html>
