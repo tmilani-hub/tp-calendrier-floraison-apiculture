@@ -74,7 +74,7 @@ main {
 	width: 100%;
 }
 
-.sectionDate {
+#sectionDate {
 	padding: 24px;
 	background-color: white;
 	display: flex;
@@ -268,7 +268,7 @@ progress {
 }
 
 progress[value="33"] {
-	border: 1px solid #7b1b0a;
+	border: 1px solid hsl(9, 85%, 26%);
 }
 
 progress[value="66"] {
@@ -314,6 +314,14 @@ progress::-moz-progress-bar {
 .img {
 	width: 200px;
 	height: 259px;
+}
+
+#mon-conteneur {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: start;
+	gap: 48px;
 }
 
 @media screen and (min-width: 760px) {
@@ -372,7 +380,7 @@ progress::-moz-progress-bar {
 		flex-direction: row;
 	}
 
-	.article>img {
+	.article > img {
 		width: 200px;
 		height: 200px;
 		border-radius: 8px;
